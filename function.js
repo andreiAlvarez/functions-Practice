@@ -6,3 +6,6 @@ const odds = (values) => values.filter(x =>x%2!=0 );
 
 const unusualFive = () => ['a', 'b', 'c', 'd', 'e'].length;
 
+// function 3
+
+const formatMoney = amount => `$${amount.toFixed(2)}`; 
