@@ -19,3 +19,7 @@ The company you work for has just been awarded a contract to build a payment gat
 39.99 becomes $39.99
 
 The rest of your team will make sure that the argument is sanitized before being passed to your function although you will need to account for adding trailing zeros if they are missing (though you won't have to worry about a dangling period).
+
+Function 4
+
+Return product of numbers between a and b (both non-negative). If it's impossible then return 'Error' in JavaScript
