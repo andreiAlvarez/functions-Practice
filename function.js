@@ -17,3 +17,7 @@ const product = (a, b) => b - a > 1 ? Array.from(Array(b - a - 1), (_, i) => a +
 // function 5
 
 const findNeedle =haystack => "found the needle at position " + haystack.indexOf("needle");
+
+// kata 6
+
+const datingRange = (age) => age>=14?`${Math.floor(age/2+7)}-${Math.floor((age-7)*2)}`:`${Math.floor(age-(age*0.1))}-${Math.floor(age+(age*0.1))}`
