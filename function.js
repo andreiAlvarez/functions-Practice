@@ -48,3 +48,5 @@ function motto(name) {
    const search = houses.find(v=>v.name===name)
    return search?search.motto:''
 }
+// kata 9
+const aspectRatio = (x,y) => [Math.ceil(y*16/9), y];
