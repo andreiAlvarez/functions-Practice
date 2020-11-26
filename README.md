@@ -145,3 +145,16 @@ hotpo(6) returns 8
 
 hotpo(23) returns 15
 23 -> 70 -> 35 -> 106 -> 53 -> 160 -> 80 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+// Kata 12
+
+An AI has infected a text with a character!!
+
+This text is now fully mutated to this character.
+
+If the text or the character are empty, return an empty string.
+There will never be a case when both are empty as nothing is going on!!
+
+Note: The character is a string of length 1 or an empty string.
+
+
