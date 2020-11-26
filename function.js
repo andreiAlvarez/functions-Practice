@@ -59,3 +59,7 @@ const bmi = (w, h, bmi = w/h/h) =>  bmi <= 18.5 ? "Underweight" :
 // kata 11
 
 const hotpo = (n, acc = 0) => n <= 1 ? acc : hotpo(n % 2 === 0 ? n / 2 : 3 * n + 1, acc + 1)
+
+// kata 12 
+
+const contamination = (text, char) => char.repeat(text.length);
