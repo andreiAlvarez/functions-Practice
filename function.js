@@ -63,3 +63,28 @@ const hotpo = (n, acc = 0) => n <= 1 ? acc : hotpo(n % 2 === 0 ? n / 2 : 3 * n +
 // kata 12 
 
 const contamination = (text, char) => char.repeat(text.length);
+
+// kata 13
+
+const Calculator = function() {
+  this.evaluate = string => {
+let arr = string.split(" ");
+    while (arr.length > 1) {
+      const mult = arr.findIndex(a => a === "*" || a === "/");
+      const index =
+        mult === -1 ? arr.findIndex(b => b === "+" || b === "-") : mult;
+      const a = Number(arr[index - 1]);
+      const b = Number(arr[index + 1]);
+      const calc =
+        arr[index] === "/"
+          ? a / b
+          : arr[index] === "*"
+          ? a * b
+          : arr[index] === "-"
+          ? a - b
+          : a + b;
+      arr.splice(index - 1, 3, calc);
+    }
+    return Number(arr[0]);
+  };
+};
