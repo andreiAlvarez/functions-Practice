@@ -88,3 +88,16 @@ let arr = string.split(" ");
     return Number(arr[0]);
   };
 };
+
+// kata 14
+// solution 1
+function isVeryEvenNumber(n) {
+  if (n < 10 && n%2 === 0) return true
+  if (n > 9) {
+    return isVeryEvenNumber(String(n).split('').reduce((a,b) => +a + +b))
+  }
+  return false
+}
+// solution 2
+const isVeryEvenNumber = n => !n-- || n % 9 % 2 === 1;
+
