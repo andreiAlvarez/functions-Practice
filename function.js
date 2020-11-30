@@ -101,3 +101,13 @@ function isVeryEvenNumber(n) {
 // solution 2
 const isVeryEvenNumber = n => !n-- || n % 9 % 2 === 1;
 
+// kata 15 
+
+const validCard = card =>
+  !(
+    card
+      .split(/\s*/)
+      .map((c, i) => c * (i % 2 ? 1 : 2))
+      .map(d => (d > 9 ? d - 9 : d))
+      .reduce((a, b) => a + b) % 10
+  );
